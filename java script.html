@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            border-radius: 50px;
+            color: white;
+            background-color: blue;
+            font-size: 20px;
+        }
+        button:hover {
+            background-color: green;
+        }
+    </style>
+    <script>
+      function changeHeading() {
+          var heading = document.getElementById("MainHeading");
+          heading.style.color = "blue";
+          heading.style.textAlign = "center";
+          heading.textContent = "Java Script Basics (Js Basics)";
+      }
+    </script>
+</head>
+<body>
+    <h1 id="MainHeading">
+        Java Script Basics
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatum,
+      magni nisi consequuntur explicabo incidunt eum suscipit rem nobis vero
+      dolore cum. Nobis sunt ducimus temporibus quis ipsam sequi dolorem!
+    </p>
+    <div>
+      <img id="Image" src="img/Logo.webp" />
+    </div>
+    <button onclick="changeHeading();">Change Header</button>
+</body>
+</html>
